@@ -1,0 +1,39 @@
+/**
+  |============================
+  | Clients section
+  |============================
+*/
+
+.clients {
+	background-color: var(--logo-color-footer);
+
+	.clients__icon {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+		flex-direction: column;
+		@media (min-width: $bp-tablet) {
+			flex-direction: row;
+		}
+	}
+
+	.clients__link {
+		width: 170px;
+		height: 92px;
+		border: solid 1px var(--icon-default-color);
+		display: flex;
+		align-items: center;
+		padding: 16px 32px;
+		fill: var(--icon-default-color);
+		border-radius: 4px;
+		transition-property: border-color, fill;
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+		&:hover,
+		&:focus {
+			fill: var(--logo-color-main);
+			border-color: var(--logo-color-main);
+		}
+	}
+}

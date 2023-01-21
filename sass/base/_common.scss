@@ -1,0 +1,42 @@
+/* Плавниий скролінг до секції */
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: Roboto, sans-serif;
+}
+
+.section-wrap {
+	padding: 94px 0;
+}
+
+.section-title {
+	margin: 0 0 50px 0;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+
+.is-hidden {
+	pointer-events: none;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.thumb {
+	position: relative;
+	overflow: hidden;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.button {
+	cursor: pointer;
+}

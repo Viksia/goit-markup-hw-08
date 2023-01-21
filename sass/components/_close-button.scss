@@ -1,0 +1,14 @@
+.close-button {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	cursor: pointer;
+	color: rgba(0, 0, 0, 0.9);
+	background-color: var(--logo-color-footer);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
+}
+.close-button--x:hover,
+.close-button--x:focus {
+	fill: var(--logo-color-main);
+}
