@@ -11,24 +11,34 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: 30px;
-		flex-direction: column;
-		@media (min-width: $bp-tablet) {
-			flex-direction: row;
+
+		@media screen and (min-width: $bp-desktop) {
+			width: 100%;
 		}
 	}
 
 	.clients__link {
-		width: 170px;
+		display: flex;
+		text-align: center;
+		width: 210px;
 		height: 92px;
 		border: solid 1px var(--icon-default-color);
-		display: flex;
-		align-items: center;
-		padding: 16px 32px;
+		padding: 16px 52px;
 		fill: var(--icon-default-color);
 		border-radius: 4px;
 		transition-property: border-color, fill;
 		transition-duration: 250ms;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+		@media screen and (min-width: $bp-tablet) {
+			width: 226px;
+			padding: 16px 60px;
+		}
+		@media screen and (min-width: $bp-desktop) {
+			padding: 16px 32px;
+			width: 170px;
+			height: 92px;
+		}
 
 		&:hover,
 		&:focus {

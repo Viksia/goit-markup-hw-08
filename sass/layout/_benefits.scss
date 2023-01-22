@@ -17,7 +17,13 @@
 		}
 	}
 	&__item {
-		width: 270px;
+		width: 450px;
+		@media (min-width: $bp-tablet) {
+			width: 354px;
+		}
+		@media (min-width: $bp-desktop) {
+			width: 270px;
+		}
 	}
 
 	&__subtitle {
@@ -43,9 +49,18 @@
 		align-items: center;
 		background: #f5f4fa;
 		border-radius: 4px;
-		padding: 25px 100px;
+		width: 450px;
+		padding: 25px 190px;
 		margin-bottom: 30px;
-		width: 270px;
-		height: 120px;
+
+		@media (min-width: $bp-tablet) {
+			padding: 25px 142px;
+			width: 354px;
+		}
+		@media (min-width: $bp-desktop) {
+			padding: 25px 100px;
+			width: 270px;
+			height: 120px;
+		}
 	}
 }

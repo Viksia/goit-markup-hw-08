@@ -16,8 +16,8 @@
 		position: relative;
 		width: 100%;
 		height: 100%;
-		max-width: 528px;
-		max-height: 581px;
+		max-width: 450px;
+		max-height: 609px;
 		padding: 40px;
 		background-color: var(--logo-color-footer);
 		border-color: rgba(0, 0, 0, 0.1);
@@ -25,6 +25,11 @@
 			0px 2px 1px rgba(0, 0, 0, 0.2);
 		border-radius: 4px;
 		/* overflow-y: auto; */
+
+		@media (min-width: $bp-desktop) {
+			max-width: 528px;
+			max-height: 581px;
+		}
 	}
 
 	&__close-button {
@@ -96,11 +101,6 @@
 		fill: var(--primary-text-color);
 	}
 
-	&__checkbox {
-		margin: 0 12px 30px;
-		display: flex;
-	}
-
 	&__submit-button {
 		padding: 10px 52px;
 		display: flex;
@@ -127,6 +127,17 @@
 		}
 	}
 
+	&__checkbox {
+		margin: 0 0 30px;
+		display: flex;
+		align-items: flex-end;
+
+		@media (min-width: $bp-desktop) {
+			margin: 0 12px 30px;
+			align-items: baseline;
+		}
+	}
+
 	&__checkbox-input:checked + &__checkbox-icon {
 		fill: var(--logo-color-footer);
 		background-color: var(--logo-color-main);
@@ -136,10 +147,14 @@
 		position: relative;
 		padding-left: 24px;
 		font-weight: 400;
-		font-size: 14px;
-		line-height: 1.7;
 		letter-spacing: 0.03em;
+		font-size: 12px;
+		line-height: 1.16;
 		color: var(--primary-address-color);
+		@media (min-width: $bp-desktop) {
+			font-size: 14px;
+			line-height: 1.7;
+		}
 
 		& a {
 			text-decoration: underline;
@@ -153,6 +168,7 @@
 
 	&__checkbox-icon {
 		position: absolute;
+		text-align: left;
 		margin: 4px 8px 0 0;
 		fill: transparent;
 		border-radius: 2px;

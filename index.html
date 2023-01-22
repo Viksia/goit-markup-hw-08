@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
     <link rel="stylesheet" href="./css/main.min.css">
     <title>WebStudio</title>
 </head>
@@ -35,7 +34,7 @@
                     <li class="header__menu-link--rel"><a class="header__menu-link link" href="#">Контакти</a></li>
                 </ul>
                 <button class="header__burger js-open-menu" aria-expanded="false" aria-controls="mobile-menu"
-                    type="button">
+                    aria-label="menu-button" type="button">
                     <svg class="header__icon-burger-menu" width=40 height=40 fill="currentColor">
                         <use href="./images/icons.svg#icon-burger-menu">
                     </svg>
@@ -54,12 +53,13 @@
         </div>
     </header>
     <main>
-        <!-- <section class="hero">
+        <section class="hero">
             <div class="hero__wrap">
                 <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
                 <button class="hero__button" type="button" data-modal-open>Замовити послугу</button>
             </div>
-        </section> -->
+        </section>
+        <!-- TODO: Готово-->
         <section class="benefits section-wrap">
             <div class="container">
                 <h2 class="visual-hidden">Характеристики нашої команди</h2>
@@ -109,6 +109,7 @@
                 </ul>
             </div>
         </section>
+        <!-- TODO: Готово-->
         <section class="service">
             <div class="container">
                 <h2 class="section-title">Чим ми займаємося</h2>
@@ -127,13 +128,15 @@
                     </li>
                 </ul>
             </div>
+
         </section>
+        <!-- TODO: Готово-->
         <section class="team section-wrap">
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team__list list">
                     <li class="team__card">
-                        <img class="team__img" src="./images/team1.jpg" width="270" alt="Дезайнер продукту">
+                        <img class="team__img" src="./images/team1.jpg" alt="Дезайнер продукту">
                         <div class="team__group">
                             <h3 class="team__name">Ігор Дем'яненко</h3>
                             <p class="team__text">Product Designer</p>
@@ -159,7 +162,7 @@
                         </div>
                     </li>
                     <li class="team__card">
-                        <img class="team__img" src="./images/team2.jpg" width="270" alt="Фронтент девелопер">
+                        <img class="team__img" src="./images/team2.jpg" alt="Фронтент девелопер">
                         <div class="team__group">
                             <h3 class="team__name">Ольга Рєпіна</h3>
                             <p class="team__text">Frontend Developer</p>
@@ -184,7 +187,7 @@
                         </div>
                     </li>
                     <li class="team__card">
-                        <img class="team__img" src="./images/team3.jpg" width="270" alt="Маркетинг">
+                        <img class="team__img" src="./images/team3.jpg" alt="Маркетинг">
                         <div class="team__group">
                             <h3 class="team__name">Микола Тарасов</h3>
                             <p class="team__text">Marketing</p>
@@ -209,7 +212,7 @@
                         </div>
                     </li>
                     <li class="team__card">
-                        <img class="team__img" src="./images/team4.jpg" width="270" alt="Дизайнер">
+                        <img class="team__img" src="./images/team4.jpg" alt="Дизайнер">
                         <div class="team__group">
                             <h3 class="team__name">Михайло Єрмаков</h3>
                             <p class="team__text">UI Designer</p>
@@ -236,6 +239,7 @@
                 </ul>
             </div>
         </section>
+        <!-- TODO: Готово-->
         <section class="clients section-wrap">
             <div class="container">
                 <h2 class="section-title">Постійні клієнти</h2>
@@ -262,7 +266,7 @@
             </div>
         </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container footer--flex">
             <div>
                 <a class="footer__logo logo link" href="./index.html">Web<span class="logo-wite">Studio</span></a>
@@ -314,9 +318,9 @@
                 </form>
             </div>
         </div>
-    </footer> -->
-    <div class="mobile-menu js-menu-container is-open">
-        <div class="container">
+    </footer>
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <div class="container mobile-menu__block">
             <button class="mobile-menu__close close-button js-close-menu" type="button"><svg width=11 height=11
                     class="close-button--x">
                     <use href="./images/icons.svg#icon-cross">
@@ -324,15 +328,32 @@
             </button>
 
             <ul class="mobile-menu__menu list">
-                <li class="mobile-menu__menu-link--rel"><a
-                        class="mobile-menu__menu-link mobile-menu__menu-link--current link"
-                        href="./index.html">Студія</a>
+                <li class="mobile-menu__menu-link">
+                    <a class="mobile-menu__menu-link--current link" href="./index.html">Студія</a>
                 </li>
-                <li class="mobile-menu__menu-link--rel"><a class="mobile-menu__menu-link link"
-                        href="./portfolio.html">Портфоліо</a>
+                <li class="mobile-menu__menu-link">
+                    <a class="mobile-menu__menu-link--rel link" href="./portfolio.html">Портфоліо</a>
                 </li>
-                <li class="mobile-menu__menu-link--rel"><a class="mobile-menu__menu-link link" href="#">Контакти</a>
+                <li class="mobile-menu__menu-link">
+                    <a class="mobile-menu__menu-link--rel link" href="#">Контакти</a>
                 </li>
+            </ul>
+            <ul class="mobile-menu__contact list">
+                <li><a class="mobile-menu__tel link" href="tel:+380961111111">
+                        +380961111111</a></li>
+                <li><a class="mobile-menu__email link" href="mailto:info@devstudio.com">
+                        info@devstudio.com</a></li>
+
+            </ul>
+            <ul class="mobile-menu__socnetwork list">
+                <li><a class="mobile-menu__soclink link" href="#">
+                        Instagram</a><span>|</span></li>
+                <li><a class="mobile-menu__soclink link" href="#">
+                        Twitter</a><span>|</span></li>
+                <li><a class="mobile-menu__soclink link" href="#">
+                        Facebook</a><span>|</span></li>
+                <li><a class="mobile-menu__soclink link" href="#">
+                        LinkedIn</a></li>
             </ul>
         </div>
     </div>
@@ -394,9 +415,9 @@
 
         </div>
     </div>
-    <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-        crossorigin="anonymous"></script> -->
+        crossorigin="anonymous"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
 </body>
