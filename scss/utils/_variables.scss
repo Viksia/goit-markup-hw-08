@@ -1,0 +1,54 @@
+:root {
+	--logo-color-main: #2196f3;
+	--logo-color-header: #000000;
+	--logo-color-footer: #ffffff;
+	--background-footer-color: #2f303a;
+	--primary-text-color: #212121;
+	--primary-address-color: #757575;
+	--section-color-background: #f5f4fa;
+	--hero-button-hover: #188ce8;
+	--icon-default-color: #afb1b8;
+}
+
+$font-regular: 'Roboto-Regular', sans-serif;
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+$font-medium: 'Roboto-Medium', sans-serif;
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+$font-bold: 'Roboto-Bold', sans-serif;
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../fonts/Roboto-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+$font-black: 'Roboto-Black', sans-serif;
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url('../fonts/Roboto-Black.ttf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+$font-raleway: 'Raleway-Bold', sans-serif;
+@font-face {
+    font-family: 'Raleway-Bold';
+    src: url('../fonts/Raleway-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+

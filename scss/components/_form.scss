@@ -1,0 +1,143 @@
+/* Form */
+.form {
+	&__field {
+		position: relative;
+		margin-bottom: 10px;
+	}
+
+	&__user-label {
+		font-family: "Roboto";
+		font-size: 12px;
+		line-height: 1.16;
+		letter-spacing: 0.01em;
+		color: var(--primary-address-color);
+		margin-bottom: 4px;
+		display: inline-block;
+	}
+
+	&__user-input {
+		height: 40px;
+		width: 100%;
+		padding: 0 12px 0 40px;
+		border: 1px solid rgba(33, 33, 33, 0.2);
+		border-radius: 4px;
+		outline: none;
+
+		&:focus,
+		&:hover {
+			border-color: var(--logo-color-main);
+		}
+	}
+	&__user-input:focus + &__user-icon,
+	&__user-input:hover + &__user-icon {
+		fill: var(--logo-color-main);
+	}
+	&__user-icon {
+		position: absolute;
+		top: 50%;
+		left: 12px;
+		transform: translateY(-50%);
+	}
+
+	&__phone-label {
+		font-family: "Roboto";
+		font-size: 12px;
+		line-height: 1.16;
+		letter-spacing: 0.01em;
+		color: var(--primary-address-color);
+		margin-bottom: 4px;
+		display: inline-block;
+	}
+
+	&__phone-input {
+		height: 40px;
+		width: 100%;
+		padding: 0 12px 0 40px;
+		border: 1px solid rgba(33, 33, 33, 0.2);
+		border-radius: 4px;
+		outline: none;
+		&:focus,
+		&:hover {
+			border-color: var(--logo-color-main);
+		}
+	}
+
+	&__phone-input:focus + &__phone-icon,
+	&__phone-input:hover + &__phone-icon {
+		fill: var(--logo-color-main);
+	}
+
+	&__phone-icon {
+		position: absolute;
+		top: 50%;
+		left: 12px;
+		transform: translateY(-50%);
+	}
+
+	&__email-label {
+		font-family: "Roboto";
+		font-size: 12px;
+		line-height: 1.16;
+		letter-spacing: 0.01em;
+		color: var(--primary-address-color);
+		margin-bottom: 4px;
+		display: inline-block;
+	}
+
+	&__email-input {
+		height: 40px;
+		width: 100%;
+		padding: 0 12px 0 40px;
+		border: 1px solid rgba(33, 33, 33, 0.2);
+		border-radius: 4px;
+		outline: none;
+		&:focus,
+		&:hover {
+			border-color: var(--logo-color-main);
+		}
+	}
+	&__email-input:focus + &__email-icon,
+	&__email-input:hover + &__email-icon {
+		fill: var(--logo-color-main);
+	}
+	&__email-icon {
+		position: absolute;
+		top: 50%;
+		left: 12px;
+		transform: translateY(-50%);
+	}
+	&__comment-label {
+		font-family: "Roboto";
+		font-size: 12px;
+		line-height: 1.16;
+		letter-spacing: 0.01em;
+		color: var(--primary-address-color);
+		margin-bottom: 4px;
+		display: inline-block;
+	}
+
+	&__comment-field {
+		margin-bottom: 20px;
+	}
+	
+	&__comment-area {
+		height: 120px;
+		width: 100%;
+		padding: 8px 12px;
+		border: 1px solid rgba(33, 33, 33, 0.2);
+		border-radius: 4px;
+		resize: none;
+		outline: none;
+		display: block;
+		&:focus,
+		&:hover {
+			border-color: var(--logo-color-main);
+		}
+		&::placeholder {
+			font-size: 12px;
+			line-height: 1.16;
+			letter-spacing: 0.01em;
+			color: rgba(117, 117, 117, 0.5);
+		}
+	}
+}

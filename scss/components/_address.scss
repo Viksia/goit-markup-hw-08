@@ -1,0 +1,22 @@
+.address {
+	color: var(--primary-address-color);
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.1;
+	letter-spacing: 0.02em;
+	font-style: normal;
+	fill: var(--icon-default-color);
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	align-items: center;
+	display: flex;
+	&:hover,
+	&:focus {
+		color: var(--logo-color-main);
+		fill: var(--logo-color-main);
+	}
+}
+.address-icon {
+	margin-right: 10px;
+}

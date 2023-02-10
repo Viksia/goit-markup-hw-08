@@ -1,0 +1,44 @@
+.checkbox {
+	display: flex;
+	align-items: center;
+	&__field {
+		margin: 0 0 30px;
+		@media screen and (min-width: 1200px) {
+			margin: 0 12px 30px;
+		}
+	}
+
+	&__input {
+		appearance: none;
+	}
+	&__icon {
+		position: absolute;
+		fill: transparent;
+		border-radius: 2px;
+		border: 2px solid var(--primary-text-color);
+	}
+	&__label {
+		position: relative;
+		padding-left: 24px;
+		font-weight: 400;
+		font-size: 8px;
+		line-height: 1.16;
+		letter-spacing: 0.03em;
+		color: var(--primary-address-color);
+
+
+		@media screen and (min-width: 480px) {
+			font-size: 12px;
+		line-height: 1.16;
+		}
+		@media screen and (min-width: 1200px) {
+			font-size: 14px;
+			line-height: 1.7;
+		}
+	}
+	&__input:checked + &__icon {
+		fill: var(--logo-color-footer);
+		background-color: var(--logo-color-main);
+		border-color: var(--logo-color-main);
+	}
+}
